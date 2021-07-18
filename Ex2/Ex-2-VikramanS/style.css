@@ -1,0 +1,122 @@
+body{
+  margin:0;
+  background-color:#656da0;
+  text-align:center;
+  font-weight:bold;
+  }
+
+nav{
+  display: inline; 
+  }
+
+nav a{
+  padding: 15px 25px;
+  color: darkgreen;
+  font-size:20px;
+  text-decoration: none;
+  }
+
+div.navi{
+  margin:0;
+  width:100%;
+  padding: 25px 0px;
+  text-align: right;
+  background-color:lightblue;
+  }
+
+a:hover {
+  color:blue;
+}
+
+.column {
+  float: left;
+  width: 24%;
+  padding: 5px;
+}
+
+div.box{
+  width: 800px;
+  padding: 20px;
+  border: 8px outset green;
+  margin: auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity:1;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+p.trans{
+  transition: transform 2s;
+}
+
+p.trans:hover{
+  transform: rotate(360deg);
+}
+
+div.animate {
+  animation-name: change_color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change_color {
+  from {color: rgb(0, 77, 128);}
+  to {color: rgb(250, 0, 0);}
+}
+
+a{
+  outline: none;
+}
+
+span.blink {
+  font-size: 25px;
+  font-family: cursive;
+  color:blueviolet;
+  animation: blink 2s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Registeration</title>
+  <style>
+    body{
+    background-color:lightsteelblue;
+    text-align:center;
+    font-weight:bold;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="navi">
+	<nav style="font-size:20px">
+		<a href="index.html" target="_blank"><div class="tooltip"><i class="fa fa-home"></a></i><span class="tooltiptext">Go to home page</span></div> |
+		<a href="Commitee.html" target="_blank">Commitee</a> |
+		<a href="Papers.html" target="_blank">Call For Papers</a> |
+		<a href="Dates.html" target="_blank">Important Dates</a> |
+		<a href="Workshop.html" target="_blank">Workshop</a> |
+		<a href="Registeration.html">Registeration</a> |
+		<a href="Contact.html" target="_blank">Contact Us</a>
+	</nav>
+  </div>
+
+  <div class="animate">
+	<br><h1>Registeration</h1></div>
+  <br><br>
+  <form style="font-size:20px">
+    <label for="fname">First name :</label>
+    <input type="text" id="fname" name="fname" value=""><br>
+
+    <br><label for="lname">Last name :</label>
+    <input type="text" id="lname" name="lname" value=""><br>
+
+    <br>Gender :<input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <br><label for="dob">DOB :</label>
+    <input type="date"id="dob"name="dob"><br><br>
+
+    <br>Workshop : <input type="checkbox" id="w1" name="w1" value="">
+    <label for="w1">1. Game Development</label>
+    <input type="checkbox" id="w2" name="w2" value="">
+    <label for="w2">2. Cloud Computing</label><br>
+
+    <br><label for="mail">Email :</label>
+    <input type="email" id="mail" name="mail" value=""><br>
+
+    <br><label for="num">Mobile No. :</label>
+    <input type="number" id="num" name="num" value=""><br>
+    
+    <br><br><div class="tooltip"><input type="button" class="button" value="Submit" onclick="alert('Submitted')"><span class="tooltiptext">Click to Save</span></div>
+  </form>
+</body>
+
+</html>
